@@ -80,6 +80,7 @@ Vagrant.configure("2") do |config|
     chef.cookbooks_path = "~/repos/MyChefRepo/cookbooks"
     # chef.roles_path = "../my-recipes/roles"
     # chef.data_bags_path = "../my-recipes/data_bags"
+    chef.add_recipe "os_base"
     chef.add_recipe "java"
     chef.add_recipe 'cdh'
     chef.add_recipe 'hdfs'
